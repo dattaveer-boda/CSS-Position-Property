@@ -1,0 +1,60 @@
+<html>
+<head>
+    <style>
+        html, body {
+            /*clearing browser defaults*/
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html {
+            background: #ffffff;
+            border: 1px solid black;
+        }
+
+        body {
+            width: 90%;
+            height: 90%;
+            background: orange;
+            border: 1px solid black;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        /*nav(child), body(parent) both area absolute, source nav will take body as reference*/
+        nav {
+            background: blue;
+            margin-bottom: 5px;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+        }
+
+        .box-content {
+            position: relative;
+            background: pink;
+            width: 90%;
+            height: 50%;
+            top: 100px;
+            left: 100px;
+            text-align: center;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+    <title>
+        css position property
+    </title>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Navigation Bar</nav>
+    <div class="box-content">
+        <h1>Actual Content of the Page</h1>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
